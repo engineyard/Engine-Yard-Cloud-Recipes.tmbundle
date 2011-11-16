@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>template "${1:/path/to/generated/file}" do
+  source "${2:template}.erb"
+  owner "${3:root}"
+  group "${4:$3}"
+  mode ${7:0655}
+  variables({
+    ${10::owner =&gt; node[:owner_name]}
+  })
+end
+</string>
+	<key>name</key>
+	<string>template</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>tmp</string>
+	<key>uuid</key>
+	<string>9DE8B8C5-3F55-4BB5-B53E-B8F046E72A89</string>
+</dict>
+</plist>
