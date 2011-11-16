@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>user "${1:newuser}" do
+  uid ${2:61021}
+  gid "${3:nogroup}"
+end
+</string>
+	<key>name</key>
+	<string>user</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>user</string>
+	<key>uuid</key>
+	<string>9B8B1345-BA15-4FCF-80ED-1BCDE0A8CD89</string>
+</dict>
+</plist>
