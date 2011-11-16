@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>remote_file "${1:/tmp/local/file.zip}" do
+  source "${2:http://somewhere.com/path/to/file.zip}"
+  mode "0644"
+  ${6:checksum node[:${5:recipename}_checksum]
+  }not_if { File.exists?("$1") }
+end
+</string>
+	<key>name</key>
+	<string>remote_file</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>rem</string>
+	<key>uuid</key>
+	<string>8AD00F72-F289-40E5-AC35-8D83B9B15CF4</string>
+</dict>
+</plist>
