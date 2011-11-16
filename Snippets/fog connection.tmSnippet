@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>connection = Fog::Storage.new(
+  :provider =&gt; 'AWS',
+  :aws_secret_access_key =&gt;  node.engineyard.environment.aws_secret_key,
+  :aws_access_key_id =&gt; node.engineyard.environment.aws_secret_id
+)
+</string>
+	<key>name</key>
+	<string>fog connection</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>fog</string>
+	<key>uuid</key>
+	<string>5241E1DD-BA93-43EF-887F-41A2CDE0A5D0</string>
+</dict>
+</plist>
