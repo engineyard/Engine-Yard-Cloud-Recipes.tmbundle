@@ -5,7 +5,8 @@
 	<key>content</key>
 	<string>execute "${1:description}" do
   command "${2:command}"
-end
+  ${10:not_if { FileTest.exists?("$9:/path/to/somefile") }
+}end
 </string>
 	<key>name</key>
 	<string>execute</string>
