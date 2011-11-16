@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>bash "${1:description}" do
+  user "${2:root}"
+  cwd "${3:/tmp}"
+  code &lt;&lt;-SHELL
+    
+  SHELL
+end
+</string>
+	<key>name</key>
+	<string>bash execute</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>bash</string>
+	<key>uuid</key>
+	<string>AAC23062-0465-4268-9834-EAA16CD3CA7A</string>
+</dict>
+</plist>
