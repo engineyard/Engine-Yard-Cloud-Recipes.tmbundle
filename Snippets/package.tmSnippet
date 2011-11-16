@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>package '${1:dev-something}/${2:package}' do
+  version ${3:node[:$2_version]}
+  action :install
+end
+</string>
+	<key>name</key>
+	<string>package</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>pac</string>
+	<key>uuid</key>
+	<string>9E8D68D6-E81D-4E1D-9843-AF6859A3D65D</string>
+</dict>
+</plist>

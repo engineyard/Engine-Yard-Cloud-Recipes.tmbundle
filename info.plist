@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Engine Yard Cloud Recipes</string>
+	<key>ordering</key>
+	<array>
+		<string>6E21F3BF-1606-4EBA-B482-FE041D6A623F</string>
+		<string>DD4057DB-FEB1-454F-AD04-644F354FA892</string>
+		<string>9E8D68D6-E81D-4E1D-9843-AF6859A3D65D</string>
+		<string>51B07DDD-1EF2-4A86-B9DB-FCE1311C0A47</string>
+	</array>
+	<key>uuid</key>
+	<string>E5605E7F-497F-4BD9-AB1E-DE2DFC134095</string>
+</dict>
+</plist>

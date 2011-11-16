@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${5:# requires emerge recipe
+}enable_package '${1:dev-something}/${2:package}' do
+  version ${3:node[:$2_version]}
+end
+</string>
+	<key>name</key>
+	<string>enable_package</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>enp</string>
+	<key>uuid</key>
+	<string>51B07DDD-1EF2-4A86-B9DB-FCE1311C0A47</string>
+</dict>
+</plist>
