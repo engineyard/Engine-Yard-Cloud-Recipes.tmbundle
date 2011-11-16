@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>mount "${1:/path/to/mount/data}" do
+  device "${2:device}"
+  fstype "none"
+  options "bind,rw"
+  action :mount
+end
+</string>
+	<key>name</key>
+	<string>mount</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>ln</string>
+	<key>uuid</key>
+	<string>ED3DD543-6297-4FB5-9D84-DDDC62E674A1</string>
+</dict>
+</plist>
