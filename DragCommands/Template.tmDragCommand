@@ -7,49 +7,36 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 
-# IN DEVELOPMENT
-#
-# Should add:
-# require_recipe 'recipe_name::recipe'
-# or
-# require_recipe 'recipe_name' (if recipe is default.rb)
-
 require "#{ENV['TM_SUPPORT_PATH']}/lib/escape.rb"
 
 from_path = File.dirname(File.expand_path(ENV['TM_FILEPATH'] || '.'))
 to_path   = File.dirname(File.expand_path(ENV['TM_DROPPED_FILE']))
-begin
-  path    = to_path # was - to_path.relative_path_from(from_path)
-rescue ArgumentError
-  path    = to_path
+
+template = File.basename(ENV['TM_DROPPED_FILE'])
+puts &lt;&lt;-TEMPLATE
+template "${1:/path/to/generated/file}" do
+  source "#{template}"
+  owner "${3:root}"
+  group "${4:$3}"
+  mode ${7:0655}
+  variables({
+    ${10::owner =&gt; node[:owner_name]}
+  })
 end
-lib       = path.to_s.sub(/\.rb\z/i, '')
-puts %Q{require_recipe "#{e_sn(lib).gsub('"', '\"')}"}
-
-
-#!/usr/bin/env ruby -wKU
-
-# IN DEVELOPMENT
-#
-# Should add:
-# require_recipe 'recipe_name::recipe'
-# or
-# require_recipe 'recipe_name' (if recipe is default.rb)
-
-</string>
+TEMPLATE</string>
 	<key>draggedFileExtensions</key>
 	<array>
-		<string>rb</string>
+		<string>erb</string>
 	</array>
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>Require Recipe</string>
+	<string>Template</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>source.ruby.eycloud.recipe</string>
 	<key>uuid</key>
-	<string>6E21F3BF-1606-4EBA-B482-FE041D6A623F</string>
+	<string>346AF948-1F6A-49A0-8250-815264B11792</string>
 </dict>
 </plist>
