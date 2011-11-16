@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>remote_file "${1:/tmp/local/file.zip}" do
-  source "${2:http://somewhere.com/path/to/file.zip}"
+  source "${2:`pbpaste`}"
   mode "0644"
   ${6:checksum node[:${5:recipename}_checksum]
   }not_if { File.exists?("$1") }
