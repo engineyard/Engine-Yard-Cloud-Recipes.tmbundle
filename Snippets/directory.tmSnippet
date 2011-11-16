@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>template "${1:/path/to/generated/file}" do
-  source "${2:template}.erb"
+	<string>directory "${1:/path/to/directory}" do
   owner "${3:root}"
   group "${4:$3}"
-  mode ${7:0644}
-  variables({
-    ${10::owner =&gt; node[:owner_name]}
-  })
+  mode ${7:0755}
 end
 </string>
 	<key>name</key>
-	<string>template</string>
+	<string>directory</string>
 	<key>scope</key>
 	<string>source.ruby.eycloud.recipe</string>
 	<key>tabTrigger</key>
-	<string>tmp</string>
+	<string>dir</string>
 	<key>uuid</key>
-	<string>9DE8B8C5-3F55-4BB5-B53E-B8F046E72A89</string>
+	<string>79B1CA54-0D51-4E59-8850-F5A2E0439A1A</string>
 </dict>
 </plist>
