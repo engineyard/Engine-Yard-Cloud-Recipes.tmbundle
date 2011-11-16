@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if node[:instance_role] == "solo" || (node[:instance_role] == "util" &amp;&amp; node[:name] =~ /^(${1:prefix})/)
+	$0
+end</string>
+	<key>name</key>
+	<string>utility only</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>util</string>
+	<key>uuid</key>
+	<string>FEDCEAAF-297C-4B36-88F4-CEBDADBD0CE4</string>
+</dict>
+</plist>
