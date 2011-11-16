@@ -2,6 +2,24 @@
 
 This TextMate bundle make it very easy to write recipes for EY Cloud's Recipe system, which is based off Chef.
 
+## Usage
+
+First, create the scaffold of your EY Cloud Recipe using the [ey-recipes](https://github.com/engineyard/engineyard-recipes) tool.
+
+Within a recipe file (such as `default.rb`), change from the Ruby language to "EY Cloud Recipes"
+
+<img src="https://img.skitch.com/20111116-r11u5gfgmjf75us7aj2m53fx8s.png" alt="Change grammar" />
+
+There are many snippets available and a couple of nice drag & drop features. Press 
+`Ctrl+Cmd+T` to see the available list and the corresponding tab completion.
+
+<img src="https://img.skitch.com/20111116-dj5jun2uw3s9ca6ugrg18hhhbw.png" alt="Select Bundle Item" />
+
+Or get more information from the Bundle Editor.
+
+<img src="https://img.skitch.com/20111116-xdn9n1u7hihfp1k17jq7hq75aa.png" alt="Bundle Editor" />
+
+
 ## Installation
 
 To install via Git:
