@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
+	$0
+end</string>
+	<key>name</key>
+	<string>db only</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>db</string>
+	<key>uuid</key>
+	<string>578FFD94-18C9-40E6-88CD-8AABFE486485</string>
+</dict>
+</plist>
