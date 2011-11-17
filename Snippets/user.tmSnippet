@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>user "${1:newuser}" do
+	<string>user "${1:username}" do
   uid ${2:61021}
   gid "${3:nogroup}"
+  shell "${5:/bin/bash}"${8:
+  password ${9:"${10:seriously-putting-a-password-here}"}}
 end
 </string>
 	<key>name</key>
