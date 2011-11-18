@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>file "${1:/etc/etc/etc}/keep.${2:file-to-protected}" do
+  owner "root"
+  group "root"
+  mode 0644
+  action :create_if_missing
+end</string>
+	<key>name</key>
+	<string>keep file</string>
+	<key>scope</key>
+	<string>source.ruby.eycloud.recipe</string>
+	<key>tabTrigger</key>
+	<string>keep</string>
+	<key>uuid</key>
+	<string>DB936880-52FA-426D-A728-B762E341B280</string>
+</dict>
+</plist>

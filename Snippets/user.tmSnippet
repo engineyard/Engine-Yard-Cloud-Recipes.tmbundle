@@ -3,12 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>user "${1:username}" do
+	<string>user "create-user ${1:username}" do
   uid ${2:61021}
   gid "${3:nogroup}"
   home "/home/$1"
   shell "${5:/bin/bash}"${8:
   password ${9:"${10:seriously-putting-a-password-here}"}}
+
+  not_if "getent passwd $2"
 end
 </string>
 	<key>name</key>
