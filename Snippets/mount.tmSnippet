@@ -15,7 +15,7 @@ end
 	<key>scope</key>
 	<string>source.ruby.eycloud.recipe</string>
 	<key>tabTrigger</key>
-	<string>ln</string>
+	<string>mnt</string>
 	<key>uuid</key>
 	<string>ED3DD543-6297-4FB5-9D84-DDDC62E674A1</string>
 </dict>
