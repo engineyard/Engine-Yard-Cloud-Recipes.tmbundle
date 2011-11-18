@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>execute "${1:description}" do
-  command "${2:command}"
-  ${10:not_if { FileTest.exists?("$9:/path/to/somefile") }
-}end
+	<string>execute "${2:$1}" do
+  command "${1:command}"${8:
+  not_if { FileTest.exists?("${9:/path/to/somefile}") \}}
+end
 </string>
 	<key>name</key>
 	<string>execute</string>
