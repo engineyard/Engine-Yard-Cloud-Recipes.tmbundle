@@ -13,8 +13,16 @@ from_path = File.dirname(File.expand_path(ENV['TM_FILEPATH'] || '.'))
 to_path   = File.dirname(File.expand_path(ENV['TM_DROPPED_FILE']))
 
 template = File.basename(ENV['TM_DROPPED_FILE'])
+to_file = template.gsub(/\.erb$/, '')
+
 puts &lt;&lt;-TEMPLATE
-template "${1:/path/to/generated/file}" do
+directory "${1:/path/to/files}" do
+  owner "root"
+  group "root"
+  mode 0755
+end
+
+template "${2:$1/#{to_file}}" do
   source "#{template}"
   owner "${3:root}"
   group "${4:$3}"
