@@ -27,7 +27,9 @@ task :list do
   action_types.each do |action_type|
     actions = load_actions(action_type)
     actions.each do |action|
-      puts "#{action_type} -> #{action['name']}"
+      name = action['name']
+      tab_trigger = action['tabTrigger']
+      puts "#{action_type} -> #{name} [#{tab_trigger}]"
     end
   end
 end
