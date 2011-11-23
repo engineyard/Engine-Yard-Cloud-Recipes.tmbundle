@@ -19,7 +19,9 @@ task :list do
   # DragCommands
   actions = load_actions('DragCommands')
   actions.each do |action|
-    puts "DragCommands -> #{action['draggedFileExtensions'].inspect}"
+    name = action['name']
+    file_ext = action['draggedFileExtensions']
+    puts "DragCommands -> #{name} #{file_ext.inspect}"
   end
 
   # Others
