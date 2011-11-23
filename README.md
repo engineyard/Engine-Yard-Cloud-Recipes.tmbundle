@@ -10,8 +10,11 @@ Within a recipe file (such as `default.rb`), change from the Ruby language to "E
 
 <img src="https://img.skitch.com/20111116-r11u5gfgmjf75us7aj2m53fx8s.png" alt="Change grammar" />
 
-There are many snippets available and a couple of nice drag & drop features. Press 
-`Ctrl+Cmd+T` to see the available list and the corresponding tab completion.
+## Available commands
+
+There are many snippets available and a couple of nice drag & drop features. 
+
+Press `Ctrl+Cmd+T` to see the available list and the corresponding tab completion.
 
 <img src="https://img.skitch.com/20111116-dj5jun2uw3s9ca6ugrg18hhhbw.png" alt="Select Bundle Item" />
 
@@ -19,6 +22,31 @@ Or get more information from the Bundle Editor.
 
 <img src="https://img.skitch.com/20111116-xdn9n1u7hihfp1k17jq7hq75aa.png" alt="Bundle Editor" />
 
+Or see the list via `rake list` from the console within the bundle project itself:
+
+```
+DragCommands -> Require Recipe ["rb"]
+DragCommands -> Template ["erb"]
+Snippets -> app master only [appm]
+Snippets -> app only [app]
+Snippets -> bash execute [bash]
+Snippets -> cron [cron]
+Snippets -> db master only [dbm]
+Snippets -> db only [db]
+Snippets -> directory [dir]
+Snippets -> enable_package [enp]
+Snippets -> execute [exec]
+Snippets -> file [file]
+Snippets -> fog connection [fog]
+Snippets -> keep file [keep]
+Snippets -> link [ln]
+Snippets -> mount [mnt]
+Snippets -> package [pac]
+Snippets -> remote_file [rem]
+Snippets -> template [tmp]
+Snippets -> user [user]
+Snippets -> utility only [util]
+```
 
 ## Installation
 
